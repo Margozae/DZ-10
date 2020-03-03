@@ -1,6 +1,8 @@
+'use strict';
+
 function generateList(arr) {
     const ul = document.createElement('ul');
-    document.body.append(ul);
+    document.body.prepend(ul);
     for(let i=0; i < arr.length; i++) {
         if (typeof(arr[i]) !== 'object') {
             const li = document.createElement('li');
