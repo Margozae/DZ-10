@@ -1,7 +1,8 @@
+'use strict';
 
 function foo (limit) {
     const table = document.createElement('table');
-    document.body.append(table);
+    document.body.prepend(table);
     for (let i = 0; i < limit; i++) {
         const tr = document.createElement('tr');
         table.append(tr);
